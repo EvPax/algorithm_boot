@@ -1,0 +1,75 @@
+`timescale 1 ns / 1 ns
+// testbench is a module which only task is to test another module
+// testbench is for simulation only, not for synthesis
+module testbench;
+   // input and output test signals
+   reg en;
+   reg clk;
+   reg  [ 3:0 ] x, y;
+   wire [ 7:0 ] z;
+	wire [ 3:0 ] cnt;
+	wire [ 8:0 ] P;
+	wire [ 8:0 ] S;
+	wire [ 8:0 ] A; 
+ 
+   // create the instances of the modules you want to test
+    algoritm_booth #( .WIDTH(4) ) CLA_dut(
+        .enable ( en ),
+        .clock ( clk ),
+        .mpd ( x ),
+        .mpr ( y ),
+        .res( z ),
+		.cnt( cnt ),
+		.P( P ),
+		.S( S ),
+		.A( A )
+    );
+        
+    //write test sequence
+    initial begin
+        x    = 4'b0000;
+        y    = 4'b0000;
+        clk = 1'b0;
+		en = 1'b0;
+		#50
+		x = $urandom_range( 0, 15 );
+		y = $urandom_range( 0, 15 );
+		#10 en = 1'b1;
+		#50
+		x = $urandom_range( 0, 15 );
+		y = $urandom_range( 0, 15 );
+		#50
+		x = $urandom_range( 0, 15 );
+		y = $urandom_range( 0, 15 );
+		#50
+		x = 4'b0011;
+		y = 4'b0011;;
+		#50
+		x = 4'b0110;
+		y = 4'b0110;
+				
+		#400
+      $finish;
+    end
+    
+	always
+		#1 clk = ~clk;
+	   
+    // do at the beginning of the simulation
+    //  print signal values on every change
+    initial 
+        $monitor("Time:\t%g, x: %b, y: %b, z: %b",
+                $time,
+                x,
+                y,
+                z,
+            );
+            
+    // do at the beginning of the simulation
+    //configure signals dump for waveform's creation
+    initial begin 
+        $dumpfile("dump.vcd");
+        $dumpvars(1);  //iverilog dump init
+    end
+    
+endmodule

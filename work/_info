@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/simulation
+valgoritm_booth
+Z0 !s110 1649414097
+!i10b 1
+!s100 jNgG;dnz__3=m:MY;6Ha21
+IEj3]ZZ9Jlc;0i?^bT<D8L1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Evgeny/data/files/FPGA/labs/add_ex/independent_task
+w1649255841
+8D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/algoritm_booth.v
+FD:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/algoritm_booth.v
+L0 1
+Z3 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z4 !s108 1649414097.000000
+!s107 D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/algoritm_booth.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/algoritm_booth.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vtestbench
+R0
+!i10b 1
+!s100 2Jk1@VTgZYiBBNWALUeJQ3
+IX0@8l@mUmi`2C9_EPJ6Y<3
+R1
+R2
+w1649264547
+8D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/testbench.v
+FD:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/testbench.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/testbench.v|
+!i113 0
+R5
+R6

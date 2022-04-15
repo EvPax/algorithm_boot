@@ -1,0 +1,15 @@
+D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/algoritm_booth.v {1 {vlog -work work -vopt -stats=none D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/algoritm_booth.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module algoritm_booth
+
+Top level modules:
+	algoritm_booth
+
+} {} {}} D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/testbench.v {1 {vlog -work work -vopt -stats=none D:/Evgeny/data/files/FPGA/labs/add_ex/independent_task/testbench.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}}

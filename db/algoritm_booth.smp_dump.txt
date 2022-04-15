@@ -1,0 +1,7 @@
+
+State Machine - |top|algoritm_booth:multiplication|state_current
+Name state_current.RESULT state_current.SHIFT state_current.RUN state_current.START 
+state_current.START 0 0 0 0 
+state_current.RUN 0 0 1 1 
+state_current.SHIFT 0 1 0 1 
+state_current.RESULT 1 0 0 1 

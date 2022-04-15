@@ -1,0 +1,9 @@
+module top
+(	
+	input MAX_CLK1_50,
+	input [ 8:0 ] SW,
+	output [ 8:0 ] LED,
+	output [ 7:0 ] HEX0,
+	output [ 7:0 ] HEX1,
+	output [ 7:0 ] HEX2
+)
